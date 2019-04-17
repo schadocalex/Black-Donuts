@@ -1,4 +1,4 @@
-import { Black, Device, CanvasDriver, StageScaleMode, StageOrientation, Input, Renderer, Debug, MasterAudio } from 'black';
+import { Black, Device, CanvasDriver, StageScaleMode, Orientation, Input, Renderer, Debug, MasterAudio } from 'black';
 import Game from './game';
 import { PerfMonitor, FPSCounter, DeltaCounter, BlackObjectsCounter, BlackParticleCounter } from './perf-monitor';
 
@@ -11,7 +11,7 @@ black.start();
 
 black.stage.scaleMode = StageScaleMode.LETTERBOX;
 black.stage.setSize(960, 640);
-black.stage.orientation = StageOrientation.UNIVERSAL;
+black.stage.orientation = Orientation.UNIVERSAL;
 
 // let perf = new PerfMonitor(1);
 // perf.add(new FPSCounter());

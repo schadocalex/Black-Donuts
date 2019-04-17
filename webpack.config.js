@@ -14,6 +14,7 @@ module.exports = {
     path: `${__dirname}/dist`,
     filename: '[name].js',
   },
+  devtool: 'source-map',
   module: {
     rules: [{
       test: /\.js$/,

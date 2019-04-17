@@ -16,6 +16,7 @@ import {
   MathEx,
   Device
 } from 'black';
+import LP from '../lp';
 
 import FitViewportComponent from '../fit-component';
 
@@ -39,7 +40,7 @@ export default class CTA extends GameObject {
     let centerContainer = this.centerContainer = this.addChild(new GameObject());
     centerContainer.x = this.stage.centerX;
     centerContainer.y = this.stage.centerY;
-    centerContainer.scale = this.stage.LP(0.7, 1);
+    centerContainer.scale = LP(0.7, 1);
     centerContainer.touchable = true;
 
     let donut = new Sprite('donut');
